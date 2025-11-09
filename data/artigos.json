@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Introdução ao App Router no Next.js 15",
+    "author": "Rodrigo Dev",
+    "publishedAt": "2025-11-10",
+    "excerpt": "Entenda como funciona o App Router e por que ele é ideal para aplicações modernas.",
+    "content": "O App Router introduz uma nova forma de estruturar rotas em projetos Next.js, utilizando a pasta `app/`. Com ele, cada pasta pode representar uma rota, suportando layouts aninhados, Server Components e otimizações automáticas. Neste artigo, mostramos como organizar a estrutura base do projeto, criar páginas iniciais, rotas dinâmicas e preparar o terreno para SEO, SSG e SSR dentro do mesmo fluxo."
+  },
+  {
+    "id": 2,
+    "title": "Data Fetching com JSON local e API no Next.js 15",
+    "author": "Rodrigo Dev",
+    "publishedAt": "2025-11-10",
+    "excerpt": "Veja como carregar artigos de um JSON local ou de uma API externa com Server Components.",
+    "content": "O Next.js 15 permite realizar data fetching diretamente em Server Components usando funções assíncronas nas páginas. Para estudos, podemos começar com um JSON local em `/data/artigos.json`, garantindo reprodutibilidade. Em produção, podemos trocar facilmente para uma API, como o `crudcrud`, usando `fetch` com `cache: \"no-store\"` para SSR ou `next: { revalidate: 60 }` para SSG com revalidação. Toda a lógica é centralizada em `lib/articles.ts`, facilitando manutenção e escalabilidade."
+  },
+  {
+    "id": 3,
+    "title": "SEO Dinâmico com generateMetadata",
+    "author": "Rodrigo Dev",
+    "publishedAt": "2025-11-10",
+    "excerpt": "Aprenda a definir metadados únicos por artigo usando o App Router.",
+    "content": "Uma das maiores vantagens do App Router é a função `generateMetadata`, que permite criar metadados dinâmicos por página. Na rota `/artigos/[slug]`, buscamos o artigo pelo slug e montamos um `title` e `description` exclusivos. Isso melhora o ranqueamento em buscadores, aumenta o CTR em compartilhamentos e torna cada artigo independente e bem descrito. Se o artigo não existir, retornamos metadados específicos de página não encontrada."
+  },
+  {
+    "id": 4,
+    "title": "Deploy na Vercel: do GitHub à produção",
+    "author": "Rodrigo Dev",
+    "publishedAt": "2025-11-10",
+    "excerpt": "Passo a passo para publicar seu blog dinâmico com Next.js 15 na Vercel.",
+    "content": "Após testar o projeto localmente, o próximo passo é subir o código para o GitHub e integrar com a Vercel. Basta criar um repositório, enviar o código e, na Vercel, importar o projeto. Ela detecta automaticamente o Next.js, configura o build e gera uma URL pública. Com isso, você cumpre o requisito de deploy, possibilita o acesso público ao blog, e demonstra o uso completo do App Router com rotas dinâmicas, SSG/SSR e SEO aplicado."
+  }
+]
